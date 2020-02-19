@@ -47,7 +47,8 @@ spec:
           step([$class: 'ElectricFlowPipelinePublisher',
             configuration: 'flow-sko-jenkins-config',
             projectName: 'user8',
-            pipelineName: 'pipeline_user8'
+            pipelineName: 'pipeline_user8',
+            addParam: '{"pipeline":{"pipelineName":"CBFPipeline","parameters":"[{\\\"parameterName\\\": \\\"PipelineParam\\\", \\\"parameterValue\\\": \\\"185\\\"}]"}}'
           ])
         }
       }
