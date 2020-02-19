@@ -29,14 +29,15 @@ spec:
       steps {
         container('maven') {
           sh 'echo test'
-          sh 'mvn deploy -f ./complete/pom.xml'
+          //sh 'mvn deploy -f ./complete/pom.xml'
         }
       }
     }
     stage ('Run Sonarqube'){
       steps{
         container('maven'){
-          sh 'mvn sonar:sonar -f ./complete/pom.xml'
+          sh 'echo "test again"'
+          //sh 'mvn sonar:sonar -f ./complete/pom.xml'
         }}}
   }
   post {
